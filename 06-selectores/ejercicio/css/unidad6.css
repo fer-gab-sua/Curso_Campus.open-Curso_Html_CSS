@@ -1,0 +1,29 @@
+.contenedor {
+    background-color: aliceblue;
+    width: 400px;
+    height: 400px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.boton {
+    color: rgb(32, 70, 70);
+    height: 50px;
+    width: 100px;
+    transition: .5s;
+}
+
+
+.boton::before {
+    content: "Pasa por encima";
+}
+
+.boton:hover::before {
+    content: "¡Hecho!";
+}
+
+.boton:hover {
+    color: white;
+    background-color: green;
+}
