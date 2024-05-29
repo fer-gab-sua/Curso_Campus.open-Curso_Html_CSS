@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: gray;}
+
+        .container {
+            position: relative;
+            width: 1396px;
+            max-width: 100%;
+            height: calc(100vh - 40px);
+            background: #fff;
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06),0 2px 5px 0 rgba(0,0,0,0.06);
+            display: flex;
+        }
+        
+        .arriba {
+            position: absolute;
+            width: 100%;
+            border: solid 1px black;
+        }
+        .izquierda {
+            position:relative;
+            top: 100px;
+            background-color: hotpink;
+            flex: 30%;
+        }
+        .derecha {
+            position:relative;
+            top: 100px;
+            background-color: azure;
+            flex: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="arriba">
+            <h1>arriba</h1>
+        </div>
+        <div class="izquierda">
+            <h1>izquierda</h1>
+        </div>
+        <div class="derecha">
+            <h1>derecha</h1>
+        </div>
+    </div>
+</body>
+</html>

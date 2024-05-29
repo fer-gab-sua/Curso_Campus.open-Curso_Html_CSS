@@ -1,0 +1,16 @@
+.btn {
+    border: none;
+    padding: 0.25rem 0.5rem;
+    color: #b2b2b2;
+
+    &:hover {
+        background-color: cyan;
+        color: red;
+    }
+}
+
+.btn-2 {
+    @extend .btn;
+    background-color: gray;
+    border-radius: 0.25rem;
+}
